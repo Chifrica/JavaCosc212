@@ -48,7 +48,7 @@ class Main {
         • static member classes can be defined only in top-level classes .
 */
 
-class OuterClass1 {
+class StaticClass {
     private static int outerData;
 
     public static void outerMethod1() {
@@ -73,7 +73,7 @@ class OuterClass1 {
 
 class Main1 {
     public static void main(String[] args) {
-        OuterClass1.outerMethod1();
+        StaticClass.outerMethod1();
     }
 }
 
