@@ -1,0 +1,3 @@
+# Generic Code: Polymorphism allows us to write code that can be applied to different types of objects and get different result based on the object. There is no need to write separate code for each type.
+
+# Extensibility: It allows the functionality of a code to be extended. For example, if we define another subclass of Shape, Triangle, then the same code in our application can be used to process Triangle shapes as well.
