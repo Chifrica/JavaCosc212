@@ -1,3 +1,3 @@
-public class ResearchAssistance extends GraduateStudent implements Instrcutor {
+public class ResearchAssistance extends GraduateStudent1 implements Instrcutor {
     
 }
