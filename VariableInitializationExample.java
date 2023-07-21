@@ -21,7 +21,7 @@ class MyClass {
     // Class implementation
 }
 
-public class ClassInstanceExample {
+class ClassInstanceExample {
     public static void main(String[] args) {
         Class<?> class1 = MyClass.class;
         Class<?> class2 = MyClass.class;
@@ -47,7 +47,7 @@ public class ClassInstanceExample {
                 an instance of a class or by accessing a static member:
 */
 
-class MyClass {
+class MyClass2 {
     // Static member
     public static int staticField;
 
@@ -57,13 +57,13 @@ class MyClass {
     }
 }
 
-public class LoadingExample {
+class LoadingExample {
     public static void main(String[] args) {
         // Create an instance of MyClass
         MyClass obj = new MyClass();
 
         // Access a static member of MyClass
-        int value = MyClass.staticField;
+        int value = MyClass2.staticField;
 
         // Output: Loading MyClass
     }
@@ -134,7 +134,7 @@ class SubClass extends Base {
     }
 }
 
-public class TestVerificationExample {
+class TestVerificationExample {
     public static void main(String[] args) {
         SubClass obj = new SubClass();
         obj.method();
@@ -149,7 +149,7 @@ public class TestVerificationExample {
     Now, modify the Base class by changing the signature of its method:
 */
 
-class Base {
+class Base2 {
     public void method(int value) { // Changed signature
         System.out.println("Base method");
     }

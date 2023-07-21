@@ -24,6 +24,14 @@ public class TopLevelWindows {
         JButton fbb = new JButton("Unmovabe, No Frills WIndows");
         wcp.add(fbb);
 
+        Container wcc = window.getContentPane();
+        JButton fbbb = new JButton("Third button");
+        wcc.add(fbbb);
+
+        Container wccp = window.getContentPane();
+        JButton fbb2 = new JButton("Fourth button");
+        wccp.add(fbb2);
+
         frame.setVisible(true);
         window.setVisible(true);
     }
