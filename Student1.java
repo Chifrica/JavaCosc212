@@ -1,11 +1,12 @@
 public class Student1 {
+    
     // Instance variables
     protected String name;
     protected String gender;
     protected int age;
     protected String regNo;
 
-    // COnstructors
+    // Constructors
     public Student1(String name, String gender, int age, String regNo){
         this.name = name;
         this.gender = gender;
@@ -30,6 +31,7 @@ public class Student1 {
         return regNo;
     }
 
+    // toString method
     public String toString(){
         return "Name: " + name + "\nGender: " + gender + "\nAge: " + age + "\nReg No: " + regNo; 
     }
