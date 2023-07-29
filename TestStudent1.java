@@ -18,7 +18,7 @@ public class TestStudent1 {
         us.gender = "Female";
         us.age = 99;
         us.regNo = "U15CS1070";
-        us.gpa = 0.5;
+        us.gpa = 5.0;
 
         GraduateStudent1 g = (GraduateStudent1)us;
         g.thesisTitle = "Java ++";

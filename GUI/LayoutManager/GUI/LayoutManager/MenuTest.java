@@ -4,8 +4,6 @@
 
 package GUI.LayoutManager.GUI.LayoutManager;
 
-import java.awt.Menu;
-import java.awt.RenderingHints.Key;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
