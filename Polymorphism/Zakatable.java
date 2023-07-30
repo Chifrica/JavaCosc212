@@ -1,4 +1,4 @@
 public interface Zakatable {
-    getZakat();
+    void getZakat();
     double ZAKAT_RATE = 0.025;
 }

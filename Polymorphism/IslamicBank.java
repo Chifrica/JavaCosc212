@@ -1,6 +1,6 @@
 public class IslamicBank implements Zakatable{
-    // private double deposit;
-    // private double withDraw;
+    private double deposit;
+    private double withDraw;
     private double balance;
 
     public IslamicBank ( double balance){
