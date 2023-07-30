@@ -15,6 +15,7 @@ public class TextFieldEventsTest extends JFrame {
 
     Container c = getContentPane();
 
+    // Constructor
     TextFieldEventsTest(){
         
         c.setLayout(new FlowLayout());
