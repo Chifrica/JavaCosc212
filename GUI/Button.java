@@ -1,26 +1,21 @@
 package GUI;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
+import java.awt.event.*;
+import javax.swing.*;
 
 public class Button extends JFrame{
     public static void main(String[] args) {
-        JFrame jf = new JFrame("JFrame");
-        JButton jb = new JButton("Bt");
-        MyListenerClass myListener = new MyListenerClass();
+        JFrame frame = new JFrame("Example");
+        JButton btn1 = new JButton("Click me");
 
-        jb.addActionListener(myListener);
-        jf.add(jb);
-        jf.setLocation(150, 150);
-        jf.setSize(200, 200);
-        jf.setVisible(true);
+        OuterClass oc = new OuterClass();
+        btn1.addActionListener(oc);
+        frame.add(btn1);
+        frame.setSize(200, 200);
+        frame.setVisible(true);
     }
 }
 
-class MyListenerClass implements ActionListener{
+class OuterClass implements ActionListener{
     public void actionPerformed(ActionEvent ae){
         JOptionPane.showMessageDialog(null, "I was clicked!");
     }
