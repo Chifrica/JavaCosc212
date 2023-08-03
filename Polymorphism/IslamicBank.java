@@ -3,12 +3,22 @@ public class IslamicBank implements Zakatable{
     private double withDraw;
     private double balance;
 
-    public IslamicBank ( double balance){
+    public IslamicBank ( double balance, double withDraw, double deposit){
         this.balance = balance;
+        this.withDraw = withDraw;
+        this.deposit = deposit;
     }
 
     public double getbalance(){
         return balance;
+    }
+
+    public double getWithdraw(){
+        return withDraw;
+    }
+
+    public double getDeposit(){
+        return deposit;
     }
 
     public double deposit(double depo){

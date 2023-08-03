@@ -15,6 +15,7 @@ public class Circle extends Shapes {
         return (2.0 * Math.PI) * radius;
     }
 
+    // GetRadius methods
     public double getRadius(){
         return radius;
     }
