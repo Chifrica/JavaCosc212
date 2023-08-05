@@ -12,8 +12,8 @@ public class JFrameQuestion1 extends JFrame{
     JButton btn = new JButton("AC Milan");
     JButton btn2 = new JButton("Real Madrid");
     JLabel label = new JLabel("Result: ");
-    JLabel label2 = new JLabel("Winner:");
-    JLabel label3 = new JLabel("");
+    JLabel label2 = new JLabel("Last Scorer: N/A");
+    JLabel label3 = new JLabel("Winner: ");
 
     int count = 0;
     int count2 = 0;
@@ -26,7 +26,7 @@ public class JFrameQuestion1 extends JFrame{
         add(label2);
         add(label3);
         setLayout(new FlowLayout(FlowLayout.CENTER));
-        setSize(300, 300);
+        setSize(200, 300);
         setVisible(true);
         
         InnerClass listener = new InnerClass();
@@ -36,6 +36,8 @@ public class JFrameQuestion1 extends JFrame{
 
     class InnerClass implements ActionListener{
         public void actionPerformed(ActionEvent ae){
+
+            // Result
             if(ae.getSource() == btn){
                 count++;
                 label.setText("Result: " + count + " X " + count2);
@@ -44,14 +46,21 @@ public class JFrameQuestion1 extends JFrame{
                 label.setText("Result: " + count + " X " + count2);
             }
 
+            // Last Scorer
 
-
-            if (count > count2) {
-                label2.setText("Winner: AC Milan ");
-            } else if (count < count2) {
-                label2.setText("Winner: Real Madrid");
+            if(ae.getSource() == btn){
+                label2.setText("Last Scorer: AC Mailan");
             } else {
-                label2.setText("Winner: DRAW");
+                label2.setText("Last Scorer: Real Madrid");
+            }
+
+            // Winner
+            if (count > count2) {
+                label3.setText("Winner: AC Milan ");
+            } else if (count < count2) {
+                label3.setText("Winner: Real Madrid");
+            } else {
+                label3.setText("Winner: DRAW");
             }
         }
     }
