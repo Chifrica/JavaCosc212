@@ -7,10 +7,15 @@ import javax.swing.JFrame;
 public class AllShapes extends JFrame {
     AllShapes(){
         super("All Shapes");
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        setVisible(true);
+        setSize(328, 583);
     }
+    
     public static void main(String[] args) {
         new AllShapes();
     }
+
     public void paint(Graphics g){
         super.paint(g);
         g.drawLine(100, 20, 200, 100);
