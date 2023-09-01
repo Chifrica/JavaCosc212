@@ -44,6 +44,7 @@ public class CosineRule extends JFrame{
         add(otherSide);
 
         add(go);
+
         Handler handler = new Handler();
         go.addActionListener(handler);
         //end of constructor
@@ -65,6 +66,7 @@ public class CosineRule extends JFrame{
             );
 
             A = A * Math.PI /180.0;
+            
             double BC = Math.sqrt(AB * AB + AC * AC -
                 2 * AB * AC * Math.cos(A)
             );
