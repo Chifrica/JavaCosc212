@@ -34,6 +34,7 @@ public class CATest1 extends JFrame{
         btn1 = new JButton("Clear");
         btn2 = new JButton("Exit");
 
+        // Activating the variables
         add(lb1);
         add(nameSet);
         add(lb2);
