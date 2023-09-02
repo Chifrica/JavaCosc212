@@ -11,6 +11,7 @@ import javax.swing.JLabel;
 public class JFrameQuestion1 extends JFrame{
     JButton btn = new JButton("AC Milan");
     JButton btn2 = new JButton("Real Madrid");
+    
     JLabel label = new JLabel("Result: ");
     JLabel label2 = new JLabel("Last Scorer: N/A");
     JLabel label3 = new JLabel("Winner: ");
