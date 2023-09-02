@@ -15,16 +15,22 @@ public class CATest1 extends JFrame{
     JButton btn2;
 
     public CATest1() {
+        // Application name
         super("CA");
+        // Layout manager
         setLayout(new FlowLayout());
+        // Windoe size
         setSize(200, 150);
 
+        // Declearation of JLabel variables
         lb1 = new JLabel("Name:");
         lb2 = new JLabel("Address:");
         
+        // Decleartion of JTextField variables
         nameSet = new JTextField(10);
         addressSet = new JTextField(10);
 
+        // Declearation of JButton variables
         btn1 = new JButton("Clear");
         btn2 = new JButton("Exit");
 
@@ -35,9 +41,11 @@ public class CATest1 extends JFrame{
         add(btn1);
         add(btn2);
 
+        // Clear button listener
         CATest1Handler handler = new CATest1Handler();
         btn1.addActionListener(handler);
 
+        // Exit button listener
         btn2.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent ae){
                 System.exit(0);
