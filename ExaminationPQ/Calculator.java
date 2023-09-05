@@ -22,11 +22,12 @@ public class Calculator extends JFrame{
 
     public Calculator(){
         super("Calculator");
-        setSize(400, 250);
+        setSize(250, 200);
         setLayout(new FlowLayout());
         setVisible(true);
 
-        box = new JTextField(10);
+        box = new JTextField(13);
+        
         btn1 = new JButton("1");
         btn2 = new JButton("2");
         btn3 = new JButton("3");
@@ -65,5 +66,9 @@ public class Calculator extends JFrame{
 
     public static void main(String[] args) {
         new Calculator();
+        setDefaultCloseOperation(
+            JFrame.EXIT_ON_CLOSE
+        );
+        setLocationRelativeTo(null);
     }
 }
