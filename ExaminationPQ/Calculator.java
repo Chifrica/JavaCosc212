@@ -1,6 +1,6 @@
 import java.awt.*;
-import java.awt.event;
-import java.swing.*;
+import java.awt.event.*;
+import javax.swing.*;
 
 public class Calculator extends JFrame{
     private JTextField box;
@@ -22,9 +22,8 @@ public class Calculator extends JFrame{
 
     public Calculator(){
         super("Calculator");
-        setLocation(200, 200);
-        setLayout(new FlowLayout());
         setSize(400, 250);
+        setLayout(new FlowLayout());
         setVisible(true);
 
         box = new JTextField(10);
@@ -44,14 +43,27 @@ public class Calculator extends JFrame{
         btnZero = new JButton("0");
         btnEqual = new JButton("=");
 
+        add(box);
         add(btn1);
         add(btn2);
         add(btn3);
-        add(btnEqual)
+        add(btnAdd);
         add(btn4);
         add(btn5);
         add(btn6);
         add(btnSubtract);
-        add(btn7)
+        add(btn7);
+        add(btn8);
+        add(btn9);
+        add(btnMultiply);
+        add(btnDivision);
+        add(btnZero);
+        add(btnEqual);
+
+        
+    }
+
+    public static void main(String[] args) {
+        new Calculator();
     }
 }
