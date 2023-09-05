@@ -27,7 +27,7 @@ public class Calculator extends JFrame{
         setVisible(true);
 
         box = new JTextField(13);
-        
+
         btn1 = new JButton("1");
         btn2 = new JButton("2");
         btn3 = new JButton("3");
@@ -61,14 +61,44 @@ public class Calculator extends JFrame{
         add(btnZero);
         add(btnEqual);
 
-        
+        // box.addActionListener(new ActionListener(){
+        //     public void actionPerformed(ActionEvent ae){
+        //         if(btn1 == true){
+        //             btn1.getText();
+        //         } else if (btn2 == true){
+        //             btn1.getText();
+        //         } else if (btn3 == true){
+        //             btn1.getText();
+        //         } else if (btn4 == true){
+        //             btn1.getText();
+        //         } else if (btn5 == true){
+        //             btn1.getText();
+        //         } else if (btn6 == true){
+        //             btn1.getText();
+        //         } else if (btn7 == true){
+        //             btn1.getText();
+        //         } else if (btn8 == true){
+        //             btn1.getText();
+        //         } else if (btn9 == true){
+        //             btn1.getText();
+        //         } else if (btnZero == true){
+        //             btn1.getText();
+        //         } else if (btnAdd == true){
+        //             btn1.getText();
+        //         } else if (btnSubtract == true){
+        //             btn1.getText();
+        //         } else if (btnMultiply == true){
+        //             btn1.getText();
+        //         } else if (btnEqual == true){
+        //             btn1.getText();
+        //         } else {
+        //             return false;
+        //         }
+        //     }
+        // });
     }
 
     public static void main(String[] args) {
         new Calculator();
-        setDefaultCloseOperation(
-            JFrame.EXIT_ON_CLOSE
-        );
-        setLocationRelativeTo(null);
     }
 }
